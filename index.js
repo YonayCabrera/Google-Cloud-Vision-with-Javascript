@@ -18,6 +18,7 @@ function takeSnap() {
     context.drawImage(video, 0, 0, 640, 480);
     var base64Image = canvas.toDataURL().replace("data:image/png;base64,", "");
     var imageReady = prepareToSend(base64Image)
+    var key = "AIzaSyAf6lCrJ3IvyI-vVbGYSg_kqLUg8CAs094";
     sendImage(imageReady, key)
 }
 
